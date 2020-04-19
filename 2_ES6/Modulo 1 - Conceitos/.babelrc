@@ -1,0 +1,6 @@
+//present-env: identificam a plataforma que estamos utilizando para converter o codigo adaptando ele.
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"] 
+
+}

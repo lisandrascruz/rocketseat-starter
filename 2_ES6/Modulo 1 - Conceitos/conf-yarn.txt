@@ -1,0 +1,20 @@
+1. init no yarn: yarn init;
+
+2. instalar dependencias:   
+    yarn add @babel/cli
+    yarn add @babel/preset-env
+    yarn add @babel/core
+    yarn add @babel/plugin-proposal-object-rest-spread
+
+3. criar o arquivo .babelrc e adicionar:
+    {
+        "presets": ["@babel/preset-env"],
+        "plugins": ["@babel/plugin-proposal-object-rest-spread"] 
+    }
+
+4. adicionar no Package.json:
+  "scripts": {
+    "dev": "babel ./"NOME DO SEU JS".js -o ./bundle.js -w"
+  } 
+
+5. Adicionar "node_modules/" no .gitignore;
