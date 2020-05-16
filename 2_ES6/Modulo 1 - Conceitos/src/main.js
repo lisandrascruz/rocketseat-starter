@@ -12,8 +12,8 @@ class Usuario {
 
 class Admin extends Usuario {
     constructor() {
-        super(),
-            this.admin = true;
+        super();
+        this.admin = true;
     }
 
 }
@@ -107,7 +107,7 @@ console.log(mostraInfo({ nome: 'Diogo', idade: 23 }));
 // 5.1
 const numeros = [1, 2, 3, 4, 5, 6];
 
-const [x, ...y] = numeros;
+const [x,...y] = numeros;
 console.log(x);
 console.log(y);
 
@@ -122,8 +122,8 @@ const usuarioRocketseat = {
     }
 };
 
-const usuario2 = { ...usuarioRocketseat, nome: "Gabriel"};
-const usuario3 = { ...usuarioRocketseat, endereco: {...usuarioRocketseat.endereco, cidade: "Lontras"}};
+const usuario2 = { ...usuarioRocketseat, nome: "Gabriel" };
+const usuario3 = { ...usuarioRocketseat, endereco: { ...usuarioRocketseat.endereco, cidade: "Lontras" } };
 console.log(usuario2);
 console.log(usuario3);
 
@@ -136,9 +136,9 @@ console.log(`O usuário ${usuarioRocket} possui ${idadeUser} anos`);
 const nomeAluno = 'Diego';
 const idadeAluno = 23;
 const usuarioCompleto = {
- nomeAluno,
- idadeAluno,
- cidade: 'Rio do Sul',
+    nomeAluno,
+    idadeAluno,
+    cidade: 'Rio do Sul',
 };
 
 console.log(usuarioCompleto);

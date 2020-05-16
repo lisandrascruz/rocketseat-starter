@@ -18,3 +18,6 @@
   } 
 
 5. Adicionar "node_modules/" no .gitignore;
+
+--
+Use "yarn install" (it will install all dependencies automatically)
