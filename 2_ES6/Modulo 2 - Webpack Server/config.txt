@@ -1,0 +1,3 @@
+to start this application use "yarn install" to solve all dependencies;
+to test your application run "yarn dev";
+to generate a version to production, execute "yarn build";
